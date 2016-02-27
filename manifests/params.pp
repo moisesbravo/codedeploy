@@ -6,17 +6,17 @@
 class codedeploy::params {
   case $::osfamily {
     'Debian': {
-      $package_url  = 'https://s3.amazonaws.com/aws-codedeploy-us-east-1/latest/codedeploy-agent_all.deb'
+      $package_url  = 'https://s3.amazonaws.com/aws-codedeploy-us-west-2/latest/codedeploy-agent_all.deb'
       $package_name = 'codedeploy-agent'
       $service_name = 'codedeploy-agent'
     }
     'RedHat', 'Amazon': {
-      $package_url  = 'https://s3.amazonaws.com/aws-codedeploy-us-east-1/latest/codedeploy-agent.noarch.rpm'
+      $package_url  = 'https://s3.amazonaws.com/aws-codedeploy-us-west-2/latest/codedeploy-agent.noarch.rpm'
       $package_name = 'codedeploy-agent'
       $service_name = 'codedeploy-agent'
     }
     'Windows': {
-      $package_url  = 'https://s3.amazonaws.com/aws-codedeploy-us-east-1/latest/codedeploy-agent.msi'
+      $package_url  = 'https://s3.amazonaws.com/aws-codedeploy-us-west-2/latest/codedeploy-agent.msi'
       $package_name = 'codedeployagent'
       $service_name = 'codedeployagent'
     }
